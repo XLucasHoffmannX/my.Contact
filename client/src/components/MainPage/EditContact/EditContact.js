@@ -15,8 +15,6 @@ const EditContact = () => {
   const [isLogged] = state.userAPI.isLogged;
 
   const [contactsGet, SetContactsGet] = useState([]);
-  const [refContact, setRefContact] = useState([]);
-  const [dataContact, setDataContact] = useState([{}]);
   const [numberAdd, setNumberAdd] = useState();
   const [numberdata, setNumberData] = useState([]);
   const [images, setImages] = useState(false);
@@ -63,7 +61,6 @@ const EditContact = () => {
           ct.numberContacts.map(e => itensCopy.push(e))
           setNumberData(itensCopy);
           setNumberAdd("");
-          setRefContact(ct)
           setImages(ct.images)
           setContact(ct)
         };
@@ -183,7 +180,7 @@ const EditContact = () => {
           </div>
           <div className="inputControl">
             <label>Categoria</label>
-            <select name="colection" value={contact.colection} onChange={changeInput} required>
+            <select className="selectCategory" name="colection" value={contact.colection} onChange={changeInput} required>
               <option>Selecione uma coleção</option>
               {
                 categoryList.map(item => (

@@ -1,38 +1,71 @@
-:root{
+:root {
   --blue-patern: #3485FF;
   --blue-flex: rgba(52, 133, 255, 0.15);
   --text-patern: #495057;
   --gray: #CED4DA;
-  --white-desc : #F2F2F2;
+  --white-desc: #F2F2F2;
   --green-patern: #03543F;
   --purple-patern: #8F50E5
 }
 
-*{
+@keyframes animate-div {
+  from {
+    opacity: 0;
+    margin-top: -150px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body{
+html, body {
   height: 100%;
   width: 100%;
 }
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
 }
 
-::-webkit-scrollbar{width: 0;}
+::-webkit-scrollbar {
+  width: 0;
+}
 
-.App{
+.App {
   width: 100vw;
   height: 100vh;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--blue-patern);
 }
@@ -41,11 +74,11 @@ ul, ol {
   list-style: none;
 }
 
-input, button, select{
+input, button, select {
   border: none;
   outline: none;
 }
 
-button{
+button {
   cursor: pointer;
 }

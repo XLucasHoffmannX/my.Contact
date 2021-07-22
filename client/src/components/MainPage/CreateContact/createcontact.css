@@ -15,6 +15,7 @@
   border-radius: 6px;
   background: var(--blue-flex);
   padding: 2rem;
+  animation: left .5s;
 }
 
 .upload{
@@ -170,4 +171,15 @@
   background: #FBD5D5;
   padding: .3rem;
   cursor: pointer;
+}
+
+.selectCategory{
+  height: 45px;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+  font-size: 18px;
+  padding-left: 1rem;
+  color: var(--text-patern);
+  font-family: 'Poppins';
+  margin-bottom: 1rem;
 }

@@ -149,7 +149,7 @@ const CreateContact = () => {
           </div>
           <div className="inputControl">
             <label>Categoria</label>
-            <select name="colection" value={contact.colection} onChange={changeInput} required>
+            <select className="selectCategory" name="colection" value={contact.colection} onChange={changeInput} required>
               <option>Selecione uma coleção</option>
               {
                 categoryList.map(item => (

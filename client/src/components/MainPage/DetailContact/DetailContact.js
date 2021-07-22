@@ -5,7 +5,7 @@ const DetailContact = ()=>{
   const params = useParams();
   return(
     <div className="detail">
-
+        <h1>{params.id}</h1>
     </div>
   )
 }

@@ -19,7 +19,6 @@ const UserAPI = (token)=>{
           alert(err)
         }
       }
-      console.log(token)
       getUser();
     }
   }, [token])
