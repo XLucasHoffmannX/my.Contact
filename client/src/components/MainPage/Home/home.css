@@ -118,3 +118,9 @@
     margin: 1rem;
   }
 }
+
+@media (max-width: 700px) {
+  .displayAdd{
+    display: none
+  }
+}

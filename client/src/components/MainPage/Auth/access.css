@@ -24,6 +24,7 @@ form {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  flex: 1;
 }
 
 .titleRef {

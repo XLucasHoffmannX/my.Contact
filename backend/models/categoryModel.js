@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const categorySchema = new mongoose.Schema({
   category: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
   userTo: {
     type: mongoose.Schema.Types.ObjectId,

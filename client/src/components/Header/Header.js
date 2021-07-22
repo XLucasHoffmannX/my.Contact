@@ -19,6 +19,11 @@ const Header = () => {
     window.location.href = '/'
   }
 
+  const OpenSide = ()=>{
+    const event = new CustomEvent('openSide')
+    window.dispatchEvent(event)
+  }
+
   return (
     <>
       {
@@ -50,7 +55,7 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <div className="menuleftLanding">
+              <div className="menuleftLanding" onClick={OpenSide}>
                 <MenuLeft />
               </div>
             </div>
@@ -62,7 +67,7 @@ const Header = () => {
                 <Link to="/home" className="logoSimple">
                   <LogoSimple />
                 </Link>
-                <Link className="menuRight" >
+                <Link className="menuRight" onClick={OpenSide}>
                   <MenuRight />
                 </Link>
               </div>
@@ -78,7 +83,6 @@ const Header = () => {
               </nav>
               <div className="perfil_logged">
                 <Link>
-                  <div className="circleImage"></div>
                   <h2>{userInfo.name}</h2>
                 </Link>
                 <div className="logoutLogged">

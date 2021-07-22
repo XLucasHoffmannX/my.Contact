@@ -1,4 +1,4 @@
-.linearCard{
+.linearCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,14 +7,14 @@
   margin-bottom: 1rem;
 }
 
-.contentContact{
+.contentContact {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 .7rem;
 }
 
-.imgContact{
+.imgContact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,34 +26,34 @@
   overflow: hidden;
 }
 
-.imgContact img{
+.imgContact img {
   width: 100%;
   height: 100%;
 }
 
-.userNameContact{
+.userNameContact {
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.userNameContact h2{
+.userNameContact h2 {
   font-size: 16px;
 }
 
-.userNameContact span{
+.userNameContact span {
   font-size: 12px;
   color: #6B7280;
 }
 
-.btnAreaCard{
+.btnAreaCard {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.view, .edit, .remove{
+.view, .edit, .remove {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,17 +62,29 @@
   padding: 0 3rem;
 }
 
-.view{
+.view {
   color: #fff;
   background: #1E429F;
 }
 
-.edit{
+.edit {
   color: var(--green-patern);
   background: #DEF7EC;
 }
 
-.remove{
+.remove {
   color: #9B1C1C;
   background: #FBD5D5;
+}
+
+@media (max-width: 700px) {
+  .linearCard {
+    height: auto;
+    width: 100%;
+  }
+  .userNameContact h2{
+    width: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
