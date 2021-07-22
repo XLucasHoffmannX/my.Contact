@@ -1,12 +1,13 @@
-.header_container{
+.header_container {
   height: 10vh;
   overflow: hidden;
 }
-.header_container.logged{
+
+.header_container.logged {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.header_landing{
+.header_landing {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,35 +17,36 @@
   overflow: hidden;
 }
 
-.logo_landing{
+.logo_landing {
   display: flex;
   justify-content: center;
 }
 
-.logo_landing svg{ 
+.logo_landing svg {
   width: 200px;
   height: 100%;
   margin: 0;
 }
 
-.header_landing nav{
+.header_landing nav {
   width: 400px;
   margin-right: 2rem;
 }
 
-.header_landing ul{
+.header_landing ul {
   display: flex;
   justify-content: space-between;
 }
 
-.header_landing ul li a{
+.header_landing ul li a {
   color: #000;
   font-weight: bold;
   font-size: 20px;
 }
 
 /* Logged */
-.header_logged{
+
+.header_logged {
   width: 100%;
   height: 100%;
   display: flex;
@@ -70,13 +72,13 @@
   font-size: 20px;
 }
 
-.logo_logged{
+.logo_logged {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo_logged a{
+.logo_logged a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -84,45 +86,91 @@
   justify-content: center;
 }
 
-.logoSimple svg{
+.logoSimple svg {
   width: 50px;
   margin-right: 1rem;
 }
 
-.menuRight svg{
+.menuRight svg {
   width: 25px;
+  cursor: pointer;
 }
 
-.perfil_logged{
+.perfil_logged {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.perfil_logged a, .logoutLogged a{
+.perfil_logged a, .logoutLogged a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.perfil_logged a h2{
+.perfil_logged a h2 {
   font-size: 18px;
   margin-left: 1rem;
   color: #000;
 }
 
-.circleImage{
+.circleImage {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   background: var(--gray);
 }
 
-.logoutLogged a{
+.logoutLogged a {
   margin-left: 1rem;
 }
 
-.logoutLogged a h2{
+.logoutLogged a h2 {
   margin-right: .5rem;
+}
+
+.menuleftLanding {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuleftLanding svg {
+  width: 30px;
+}
+
+@media(max-width: 700px) {
+  .logo_landing svg {
+    width: 150px;
+  }
+  .navLanding {
+    display: none;
+  }
+  .menuleftLanding {
+    display: flex;
+  }
+  .header_landing {
+    padding: 1rem;
+  }
+  .header_logged {
+    padding: 0 1rem;
+  }
+  .perfil_logged {
+    display: none;
+  }
+  .navLogged {
+    display: none;
+  }
+  .logo_logged {
+    width: 100%;
+  }
+
+  .logo_logged a {
+    justify-content: initial;
+  }
+
+  .menuRight{
+    flex-direction: row-reverse;
+  }
 }

@@ -1,4 +1,4 @@
-.loginLanding{
+.loginLanding {
   height: 80vh;
   display: flex;
   align-items: center;
@@ -6,11 +6,11 @@
   padding: 0 2rem;
 }
 
-.loginLanding.regis{
+.loginLanding.regis {
   height: auto;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,19 +19,18 @@ form{
   height: 100%;
 }
 
-.controlLogin{
+.controlLogin {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  flex: 1;
 }
 
 .titleRef {
   width: min(550px, 100%);
 }
 
-.displayLogin{
+.displayLogin {
   background: var(--blue-flex);
   display: flex;
   width: min(550px, 100%);
@@ -44,23 +43,23 @@ form{
   padding: 1rem 2rem;
 }
 
-.displayLogin.register{
+.displayLogin.register {
   height: auto;
 }
 
-.inputControl{
+.inputControl {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.inputControl label{
+.inputControl label {
   font-size: 18px;
   font-weight: 500;
   color: var(--text-patern);
 }
 
-.inputControl input{
+.inputControl input {
   height: 45px;
   width: 100%;
   border-radius: 4px;
@@ -71,12 +70,12 @@ form{
   margin-bottom: 1rem;
 }
 
-.inputControl.btn{
+.inputControl.btn {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.inputControl button{
+.inputControl button {
   height: 45px;
   border-radius: 12px;
   width: 300px;
@@ -86,12 +85,12 @@ form{
   font-size: 18px;
 }
 
-.inputControl button:hover{
+.inputControl button:hover {
   transform: scale(1.015);
   background: var(--blue-patern);
 }
 
-.backLogin{
+.backLogin {
   width: 50%;
   display: flex;
   align-items: center;
@@ -99,12 +98,21 @@ form{
   margin: 1rem;
 }
 
-.backLogin svg{
+.backLogin svg {
   width: min(80%, 1000px);
   height: 80%;
   object-fit: cover;
 }
 
-.footerApp{
+.footerApp {
   margin-top: 2.5rem;
+}
+
+@media(max-width: 700px) {
+  .backLogin {
+    display: none;
+  }
+  .controlLogin {
+    width: 100%;
+  }
 }

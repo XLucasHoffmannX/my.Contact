@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { GlobalState } from '../../State';
 import { Link } from 'react-router-dom'
-import { Logo, LogoSimple, MenuRight, Logout } from "../Icons/IconsComponents";
+import { Logo, LogoSimple, MenuRight, Logout, MenuLeft } from "../Icons/IconsComponents";
 import axios from 'axios';
 import './header.css'
 
@@ -31,7 +31,7 @@ const Header = () => {
                 </Link>
               </div>
 
-              <nav>
+              <nav className="navLanding">
                 <ul>
                   <li>
                     <Link to="/">
@@ -50,6 +50,9 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
+              <div className="menuleftLanding">
+                <MenuLeft />
+              </div>
             </div>
           </div>
           :
@@ -63,7 +66,7 @@ const Header = () => {
                   <MenuRight />
                 </Link>
               </div>
-              <nav>
+              <nav className="navLogged">
                 <ul>
                   <li>
                     <Link to="/home">Contatos</Link>
