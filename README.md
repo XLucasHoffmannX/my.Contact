@@ -10,10 +10,9 @@
 ## Erros
 [ x ] - 404 
 [ x ] - Erro de acesso
-[  ] - Modal de erro
 
 ## Reponsividade
-[  ] - Mobile e Web
+[ x ] - Mobile e Web
 
 ## Contatos
 [  x ] - Cadastro
