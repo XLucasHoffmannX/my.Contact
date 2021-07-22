@@ -1,0 +1,21 @@
+.notFoundContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.notFoundContainer h1{
+  color: var(--blue-patern);
+}
+
+.notFoundContainer img{
+  width: 300px;
+}
+
+.titleAccessError{
+  width: min(500px, 100%);
+  text-align: center;
+}

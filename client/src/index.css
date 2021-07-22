@@ -1,0 +1,51 @@
+:root{
+  --blue-patern: #3485FF;
+  --blue-flex: rgba(52, 133, 255, 0.15);
+  --text-patern: #495057;
+  --gray: #CED4DA;
+  --white-desc : #F2F2F2;
+  --green-patern: #03543F;
+  --purple-patern: #8F50E5
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar{width: 0;}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+  color: var(--blue-patern);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, button, select{
+  border: none;
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}

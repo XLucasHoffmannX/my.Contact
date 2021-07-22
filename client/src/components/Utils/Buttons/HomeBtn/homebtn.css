@@ -1,0 +1,23 @@
+.btnHome {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 60%;
+  border-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.btnHome a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.btnHome a svg{
+  margin-right: 1rem;
+}

@@ -1,0 +1,173 @@
+.containerCreateContact{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding: 1rem 0;
+}
+
+.displayCreateContact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(725px, 95%);
+  border-radius: 6px;
+  background: var(--blue-flex);
+  padding: 2rem;
+}
+
+.upload{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload{
+  color: var(--text-patern);
+}
+
+.circleUpload{
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  border: 2px solid var(--gray);
+}
+
+#file_up{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.circleUpload img{
+  width: 100%;
+  height: 100%;
+}
+
+.destroy{
+  position: absolute;
+  color: #9B1C1C;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: -.3rem;
+}
+
+.addNumbers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addButonNumber{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  margin-left: 1rem;
+  margin-top: -1rem;
+  height: 45px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #28f099;
+}
+
+.inputphone{
+  width: 100%;
+}
+
+.PhoneInputCountry{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 45px;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+  background: #fff;
+}
+
+.PhoneInputCountry select{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.viewBlock{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.eye{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+  padding: .3rem 1rem;
+}
+
+.eyeBtn{
+  display: flex;
+  align-items: center;
+}
+
+.eye svg{ 
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.viewNumbersAdd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.itemNumber{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: min(300px, 100%);
+  height: 45px;
+  background: #fff;
+  border: 1px solid var(--gray);
+  padding: 1rem;
+}
+
+.itemNumber{
+  margin-bottom: .6rem;
+}
+
+.itemNumber:last-child{
+  margin: 0;
+}
+
+.itemNumber span{
+  font-size: 18px;
+}
+
+.itemNumber p{
+  color: #9B1C1C;
+  background: #FBD5D5;
+  padding: .3rem;
+  cursor: pointer;
+}
